@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression tests]" parallel="classes">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Regression(failed)" parallel="classes">
+    <classes>
+      <class name="tests.NegativeTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="verifyThatErrorMessageIsShownIfEnterWrongLoginData"/>
+          <include name="afterMethodActions"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- tests.NegativeTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Regression tests] -->

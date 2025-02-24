@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.976 s <<< FAILURE! - in TestSuite
+tests.NegativeTest.verifyThatErrorMessageIsShownIfEnterWrongLoginData  Time elapsed: 1.848 s  <<< FAILURE!
+java.lang.AssertionError: Error should be shown. expected [true] but found [false]
+	at tests.NegativeTest.verifyThatErrorMessageIsShownIfEnterWrongLoginData(NegativeTest.java:40)
+
